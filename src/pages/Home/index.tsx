@@ -1,9 +1,12 @@
 import React from "react";
-import { Container } from './styles';
+import { Container, Product } from './styles';
 
 const Home: React.FC = () => {
     return (
-        <Container />
+        <Container>
+            <Product>Produto 1</Product>
+            <Product>Produto 2</Product>
+        </Container>
     );
 }
 
