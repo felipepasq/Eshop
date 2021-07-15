@@ -2,18 +2,20 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import Home from '../pages/Home'
+import Cart from '../pages/Cart'
 
-const Auth = createStackNavigator();
+const Stack = createStackNavigator();
 
 
-const AuthRoutes: React.FC = () => (
-    <Auth.Navigator
+const StackRoutes: React.FC = () => (
+    <Stack.Navigator
         screenOptions={{
             headerTitleAlign: "center"
         }}
     >
-        <Auth.Screen name="Eshop" component={Home} />
-    </Auth.Navigator>
+        <Stack.Screen name="Eshop" component={Home} />
+        <Stack.Screen name="MyCart" component={Cart} />
+    </Stack.Navigator>
 );
 
-export default AuthRoutes;
+export default StackRoutes;
